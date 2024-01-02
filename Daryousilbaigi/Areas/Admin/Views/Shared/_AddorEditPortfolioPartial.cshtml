@@ -1,0 +1,63 @@
+﻿@using Application.Services.Portfolio;
+@model AddOrEditPortfolioDto
+
+@{
+    bool IsCreate = Model.Id == 0 ? true : false;
+}
+<form enctype="multipart/form-data" method="post" id="PortfolioForm" asp-area="admin" asp-controller="Portfolio" asp-action="SubmitPortfolioFromModal"
+      data-ajax="true" data-ajax-begin="StartLoading()" data-ajax-success="PortfolioFormSubmited" class="needs-validation was-validated">
+
+    <input asp-for="Id" class="form-control" type="hidden">
+
+    <div class="modal-header">
+        <h5 class="modal-title">@(IsCreate == true ? "ایجاد" : "ویرایش")</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+    </div>
+
+    <div class="modal-body">
+
+
+        <div class="mb-3">
+            <label class="col-form-label" for="recipient-name">عنوان:</label>
+            <input asp-for="Title" class="form-control" type="text" required>
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">تگ Seo: </label>
+            <input asp-for="ImageAlt" class="form-control" type="text" required>
+
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">لینک نمونه کار: </label>
+            <input asp-for="Link" class="form-control" type="text" required>
+
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">تصویر اصلی : </label>
+            <input accept=".jpg, .png, .jpeg" name="Image"  class="form-control" type="file" required>
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">ویدیو نمونه کار : </label>
+            <input accept=".mp4,.avi" asp-for="Video" class="form-control" type="file" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">نمونه محیط متنی</label>
+            <textarea class="form-control" asp-for="Description" required rows="3"></textarea>
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="">بستن</button>
+        <button class="btn btn-primary" type="submit">ثبت</button>
+
+    </div>
+    <link href="~/lib/wait-me/waitme.min.css" rel="stylesheet" />
+</form>
+
+
+@* <script src="~/lib/jqueryfinal/jquery.validate.min.js"></script>
+<script src="~/lib/jqueryfinal/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/lib/jqueryfinal/jquery.unobtrusive-ajax.min.js"></script> *@
+
+<script src="~/lib/wait-me/waitme.min.js"></script>
+

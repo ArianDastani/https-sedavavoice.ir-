@@ -1,0 +1,74 @@
+﻿@using Application.Services.Portfolio;
+@model List<GetAllportfolioForIndexDto>;
+@{
+    ViewData["Title"] = "نمونه کارها |";
+}
+
+<!-- portfolio -->
+<div class="cl8">
+    <div class="portfolio-wrap wedo-section animated fadeInUp" id="portfolio">
+        <div class="top-content">
+            <div class="wrap-title">
+                <div>
+                    <div class="note">
+                        <span class="icon-icon-7 icon"></span>
+                        <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+                        &ensp;
+                        <p>نمونه کارها</p>
+                    </div>
+                    <h1 style="font-size:38px;" class="title">
+                        نمونه کارهای من<span>.</span>
+                    </h1>
+                </div>
+                <div class="box-title">
+
+                    <div class="circle-box st-port">
+                        <img src="~/images/home/circle.svg" class="circle" alt="image">
+
+                        <img class="logo" src="~/images/logo-2.png" alt="داریوش ایل بیگی">
+                    </div>
+                </div>
+
+            </div>
+            <p style="text-align:justify;" class="des-portfolio">
+               
+            </p>
+        </div>
+        <div class="group-col-2 content">
+            @foreach (var item in Model)
+            {
+                <div class="cl2">
+                    <div class="box-portfolio">
+                        <div style="height:376px;width:351px;" class="img-portfolio">
+                            <img width="351px" height="360px" src="~/content/portfolio/image/@item.Image" alt="@item.ImageAlt" />
+                        </div>
+                        <div class="content">
+                            <p>@item.ImageAlt</p>
+                            <h4>
+                                <a style="font-size:18px;" href="#portfolio-v1" class="wedo-link-item" dideo-checked="true">
+                                    @item.Title
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" transform="matrix(-1,0,0,1,0,0)">
+                                        <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"></path>
+                                    </svg>
+                                </a>
+                            </h4>
+                        </div>
+                        <a asp-controller="Portfolio" asp-action="Detail" asp-route-Id="@item.Id" class="wedo-link-item wrap-link" dideo-checked="true"></a>
+                    </div>
+                </div>
+
+            }
+
+
+        </div>
+        <!-- widget link -->
+        @* <ul class="tf-pagination st1">
+            <li><a href="#"><i class="icon-arrow-thin-right"></i></a></li>
+            <li><a href="#">01</a></li>
+            <li class="current"><a href="#">02</a></li>
+            <li><a href="#">03</a></li>
+            <li class="current"><a href="#"><i class="icon-arrow-thin-left"></i></a></li>
+        </ul> *@
+    </div>
+</div>
+<!-- end -->

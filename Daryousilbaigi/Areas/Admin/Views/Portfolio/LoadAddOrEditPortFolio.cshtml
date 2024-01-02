@@ -1,0 +1,95 @@
+﻿@using Application.Services.Portfolio;
+@model AddOrEditPortfolioDto
+
+@{
+    bool IsCreate = Model.Id == 0 ? true : false;
+}
+
+
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h3>افزودن پست</h3>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                        <li class="breadcrumb-item">اخبار</li>
+                        <li class="breadcrumb-item active">افزودن پست</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h5>افزودن پست</h5>
+                    </div>
+                    <div class="card-body add-post">
+                        @* <form class="row needs-validation" enctype="multipart/form-data" method="post" asp-area="admin" asp-controller="Portfolio" asp-action="SubmitPortfolioFromModal"
+                        data-ajax="true" data-ajax-begin="StartLoading()" data-ajax-success="PortfolioFormSubmited" class="needs-validation was-validated"> *@
+                        <form method="post" enctype="multipart/form-data" asp-controller="Portfolio" asp-action="SubmitPortfolioFromModal" 
+                        >
+                            <input asp-for="Id" class="form-control" type="hidden">
+
+                            <div class="col-sm-12">
+
+                                <div class="mb-3">
+                                    <label class="col-form-label" for="recipient-name">عنوان:</label>
+                                    <input asp-for="Title" class="form-control" type="text" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="col-form-label" for="message-text">تگ Seo: </label>
+                                    <input asp-for="ImageAlt" class="form-control" type="text" required>
+
+                                </div>
+                                <div class="mb-3">
+                                    <label class="col-form-label" for="message-text">لینک نمونه کار: </label>
+                                    <input asp-for="Link" class="form-control" type="text" required>
+
+                                </div>
+                                <div class="mb-3">
+                                    <label class="col-form-label" for="message-text">تصویر اصلی : </label>
+                                    <input name="Image2" asp-for="Image" class="form-control" type="file">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="col-form-label" for="message-text">ویدیو نمونه کار : </label>
+                                    <input accept=".mp4,.avi" name="Video2" asp-for="Video" class="form-control" type="file">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">نمونه محیط متنی</label>
+                                    <textarea class="form-control" asp-for="Description" required rows="3"></textarea>
+                                </div>
+
+
+                            </div>
+                            <div class="btn-showcase text-end">
+                                <button class="btn btn-primary" type="submit">پست کردن</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link href="~/lib/wait-me/waitme.min.css" rel="stylesheet" />
+
+    <!-- Container-fluid Ends-->
+</div>
+
+@section Scripts{
+    <script src="~/lib/wait-me/waitme.min.js"></script>
+
+
+
+}
+
+

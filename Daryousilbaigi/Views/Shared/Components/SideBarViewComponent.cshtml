@@ -1,0 +1,41 @@
+﻿@using Application.Services.Information;
+@model GetInfoDto
+
+@{
+    Layout = null;
+}
+<div class="cl4">
+    <div class="sticky-sidebar">
+        <div class="avatar">
+            <img src="~/content/profileimage/@Model.ProfileImage" alt="پروفایل">
+        </div>
+        <div class="profile">
+            <div class="top">
+                <h3><a href="/">سلام! من @Model.FirstName هستم</a></h3>
+                <div class="wrap-text">
+                    <span class="auto-type">طراح UX/UI</span>
+                </div>
+            </div>
+            <div class="content">
+                <p>موبایل: </p>
+                <p>کانال تتتلگرام: @@@Model.TelegramChannel</p>
+
+                    <ul class="wd-social-icon m-top">
+                        <li><a href="#"><i class="icon-phone"></i></a></li>
+                        @* <li><a href="#"><i class="fa-instagram"></i></a></li> *@
+                        @* <li><a href="#"><i class="icon-instagram"></i></a></li> *@
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+
+                    </ul>
+            </div>
+            <div class="bottom">
+                <a class="btn-profile active wedo-link-item" href="/contact">
+                    تماس با من ! <span class="icon-arrow"></span>
+                </a>
+                <a class="btn-profile wedo-link-item" href="/contact">
+                    دانلود رزومه <span class="icon-arrow"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

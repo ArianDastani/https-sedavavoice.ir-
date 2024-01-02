@@ -1,0 +1,157 @@
+﻿@model ContactViewModel;
+
+@{
+    ViewData["Title"] = "ارتباط با من |";
+}
+
+<!-- contact -->
+<div class="cl8">
+    <div class="contact-wrap wedo-section animated fadeInUp" id="contact">
+        <div class="top-content">
+            <div class="wrap-title st-blog">
+                <div>
+                    <div class="note">
+                        <span class="icon-note icon"></span>
+                        <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+                        &ensp;
+                        <p>ارتباط با من</p>
+                    </div>
+                    <h1 style="font-size:45px;" class="title">
+                        ارتباط بامن<span>.</span>
+                    </h1>
+                </div>
+                <div class="box-title">
+
+                    <div class="circle-box">
+                        <img src="~/images/home/circle.svg" class="circle" alt="داریوش ایل بیگی">
+
+                        <img class="logo" class="logo" src="~/images/logo-2.png" alt="داریوش ایل بیگی">
+                    </div>
+                </div>
+
+
+            </div>
+            <p style="text-align:justify;">
+                شما میتوانید برای برقراری ارتباط از طریق شبکه های اجتماعی با من در ارتباط باشید
+            </p>
+        </div>
+        <div class="box-cart-contact">
+            <div class="tf-cart-contact">
+                <div class="inner-left">
+                    <span><i class="icon-phone"></i> شماره تماس ما</span>
+                </div>
+                <h3 style="direction: ltr;">@Model.GetInfo.PhoneNumber</h3>
+            </div>
+           
+            <div class="tf-cart-contact">
+                <div class="inner-left">
+                    <span><i class="icon-location"></i>آدرس</span>
+                </div>
+                <h3>@Model.GetInfo.Address</h3>
+            </div>
+        </div>
+        <div class="wd-post-comment">
+            <div class="title-cmt">
+                <h3>یک پیغام ارسال کنید</h3>
+                <p></p>
+            </div>
+            <div class="group-input">
+                <div class="input">
+                    <label>نام شما</label>
+                    <input type="text" id="name" placeholder="نام شما">
+                    <span id="validname"></span>
+                </div>
+                <div class="input">
+                    <label>شماره تلفن شما</label>
+                    <input class="num" type="text" maxlength="11" inputmode="numeric" pattern="[0-9]+" id="number" placeholder="09198842083" />
+                </div>
+            </div>
+            <div class="textarea">
+                <label>پیغام شما</label>
+                <textarea id="text" placeholder="پیغام خود را بنویسید"></textarea>
+            </div>
+            <p>
+                <span>*</span>&nbsp; برای دریافت رایگان مشاوره با من 24 ساعته تماس بگیرید یا فرم زیر را پر کنید
+                مشاوره اولیه.
+            </p>
+            <button onclick="sendMessage()" type="submit">
+                ارسال پیغام <span class="icon-arrow"></span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- end -->
+@section Scripts{
+
+    <script>
+        $('.num').keypress(function (e) {
+            if (String.fromCharCode(e.keyCode).match(/[^0-9]/g)) return false;
+        });
+    </script>
+
+    <script src="~/sweetalert2/sweetalert2.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script>
+        function sendMessage() {
+
+            var name = $("#name").val();
+            var number = $("#number").val();
+            var text = $("#text").val();
+
+            if (name == "" || number == "" || text == "") {
+                swal.fire(
+                    'ناموفق!',
+                    'نام یا شماره تماس یا پیام خود را وارد کنید',
+                    'warning'
+                );
+
+
+
+            } else {
+                var postData = {
+                    'name': name,
+                    'number': number,
+                    'text': text
+                };
+
+
+                $.ajax({
+                    contentType: 'application/x-www-form-urlencoded',
+                    dataType: 'json',
+                    type: "POST",
+                    url: "contact/SendMessage",
+                    data: postData,
+                    success: function (data) {
+                        if (data.isSuccess == true) {
+                            swal.fire(
+                                'موفق!',
+                                data.message,
+                                'success'
+                            ).then(function (isConfirm) {
+                                location.reload();
+                            });
+
+
+                        }
+                        else {
+
+                            swal.fire(
+                                'هشدار!',
+                                data.message,
+                                'warning'
+                            );
+
+                        }
+                    },
+                    error: function (request, status, error) {
+                        alert(request.responseText);
+                    }
+
+                });
+            }
+
+
+        }
+    </script>
+}

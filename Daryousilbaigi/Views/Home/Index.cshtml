@@ -1,0 +1,266 @@
+﻿
+@using Common.Calender
+@model IndexViewModel;
+
+
+<!-- about us -->
+<div class="wedo-section animated fadeInUp active" id="about">
+    <div class="about-wrap">
+        <div class="top-content">
+            <div class="wrap-title st-about">
+                <div>
+                    <div class="note">
+                        <span class="icon-user icon"></span>
+                        <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+
+                        <p>درباره من</p>
+                    </div>
+                    <h1 class="title">
+                        درباره من <span>!</span>
+                    </h1>
+                </div>
+                <div class="box-title">
+                    <div class="circle-box">
+                        <img src="images/home/circle.svg" class="circle" alt="داریوش ایل بیگی">
+                        <img style="height: 87.5px; width: 87.5px;" class="logo" src="images/logo-2.png" alt="داریوش ایل بیگی">
+                    </div>
+                </div>
+
+
+            </div>
+            <p style="text-align:justify;" class="mb15">
+
+                @if (Model.GetInfo.AboutMe != null || Model.GetInfo.AboutMe != " " || Model.GetInfo.AboutMe != "")
+                {
+                    @Html.Raw(Model.GetInfo.AboutMe)
+                    ;
+                }
+            </p>
+
+        </div>
+        <div class="content">
+
+            <div class="inner-top">
+                <div class="content-left br-left">
+                    <h4>نام</h4>
+                    <p>
+                        @if (Model.GetInfo.FirstName != null || Model.GetInfo.FirstName != " " || Model.GetInfo.LastName != "")
+                        {
+                            @Model.GetInfo.FirstName
+
+                        }
+                    </p>
+                </div>
+                <div class="content-right">
+                    <h4>تلفن</h4>
+                    <p style="direction: ltr;">
+                        @if (Model.GetInfo.PhoneNumber != null || Model.GetInfo.PhoneNumber != " " || Model.GetInfo.PhoneNumber != "")
+                        {
+                            @Model.GetInfo.PhoneNumber
+
+                        }
+                    </p>
+                </div>
+            </div>
+            <div class="inner-bottom">
+                <div class="content-left br-left br-bottom">
+                    <h4>آدرس</h4>
+                    <p>
+                        @if (Model.GetInfo.Address != null || Model.GetInfo.Address != " " || Model.GetInfo.Address != "")
+                        {
+                            @Model.GetInfo.Address
+
+                        }
+                    </p>
+                </div>
+                <div class="content-right br-bottom">
+                    <h4>تجربه</h4>
+                    <p>
+                        @if (Model.GetInfo.Experience != null || Model.GetInfo.Experience != " " || Model.GetInfo.Experience != "")
+                        {
+                            @Model.GetInfo.Experience
+
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="top-content">
+        <div class="wrap-title">
+            <div>
+                <div class="note">
+                    <span class="icon-icon-6 icon"></span>
+                    <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+
+                    <p>مهارت های من</p>
+                </div>
+                <h1 class="title" style="font-size:32px;">
+                    مهارت هایی که تا الان دارم و بازاری برای مهارت هایم<span>.</span>
+                </h1>
+            </div>
+            <div class="box-title">
+            </div>
+
+
+        </div>
+        <p style="text-align:justify;">
+            هرکسی برای پیشرفت کسب و کار خودش
+            در هر زمینه ای نیاز به تبلیغات داره و این تبلیغات باید به صورتی باشه که مخاطب هدف و بیننده جذب کسب و کار شما بشه و یکی از اصلی ترین و تاثیر گذار ترین موارد در تبلیغات صدا است که باعث جذب بهتر مخاطب به تبلیغ شما میشه و اینجاست که صداوا گویندگی پروژه ها و ویدیو های شما رو بر عهده میگیره و با صداگذاری روی کارهای شما اون کارو جذاب تر میکنه
+        </p>
+    </div>
+
+    <div class="tf-skill-bar tf-progress-bar">
+
+        @foreach (var item in Model.SkillsForIndex)
+        {
+
+            <div class="progress-item ">
+                <h4>@item.Title</h4>
+                <div class="inner-skill">
+                    <div class="progress-animate" data-valuemax="100" data-valuemin="0" data-valuenow="@item.Percent" style="width: 80%;"></div>
+                </div>
+            </div>
+        }
+
+
+
+        <!-- <div class="themesflat-progress style-1 height-10px clearfix">
+              <h3 class="title">PARTNERSHIP</h3>
+              <div class="perc-wrap">
+                  <div class="perc"><span>80%</span></div>
+              </div>
+              <div class="progress-bg" data-percent="80" data-inviewport="yes">
+                  <div class="progress-animate"></div>
+              </div>
+          </div>
+          <div class="themesflat-progress style-1 height-10px clearfix">
+              <h3 class="title">FULL SUPPORT</h3>
+              <div class="perc-wrap">
+                  <div class="perc"><span>90%</span></div>
+              </div>
+              <div class="progress-bg" data-percent="90" data-inviewport="yes">
+                  <div class="progress-animate"></div>
+              </div>
+          </div>
+          <div class="themesflat-progress style-1 height-10px clearfix">
+              <h3 class="title">OPPORTUNITY</h3>
+              <div class="perc-wrap">
+                  <div class="perc"><span>70%</span></div>
+              </div>
+              <div class="progress-bg" data-percent="70" data-inviewport="yes">
+                  <div class="progress-animate"></div>
+              </div>
+          </div> -->
+
+    </div>
+    <br />
+    <br /> <br />
+    <br />
+    <div class="resume-wrap">
+        <div class="wrap-title">
+            <div class="note">
+                <span class="icon-user icon"></span>
+                <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+
+                <p>سوابق تحصیلی</p>
+            </div>
+            <div class="box-title">
+                <h1 style="font-size:48px;" class="title">
+                    تحصیلات<span>!</span>
+                </h1>
+
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            @foreach (var item in Model.EducationForindex)
+            {
+                <div class="col-lg-12">
+                    <div class="tf-box-resume animate-down">
+                        <ul class="inner-left">
+                            <li>@item.EducationPlace</li>
+                            <li>@CalenderConvertor.ToShamsi(item.EndDate)</li>
+                        </ul>
+                        <h4 class="inner-right"><a href="/">@item.Title</a></h4>
+                    </div>
+                </div>
+
+            }
+
+
+        </div>
+
+    </div>
+
+
+
+    @* <div class="top-content">
+
+        <div class="wrap-title">
+            <div>
+                <div class="note">
+                    <span class="icon-icon-7 icon"></span>
+                    <span>سلام!</span>
+
+                    <p>نمونه کارها</p>
+                </div>
+                <h1 style="font-size:36px;" class="title">
+                    برخی از نمونه کارهای من<span>.</span>
+                </h1>
+            </div>
+
+
+        </div>
+    </div> *@
+
+@*         <div class="group-col-2 content">
+
+            @foreach (var item in Model.GetAllPortfolioForIndex)
+            {
+                <div class="cl2">
+                    <div class="box-portfolio">
+                        <div style="height:376px;width:351px;" class="img-portfolio">
+                            <img width="351px" height="360px" src="~/content/portfolio/image/@item.Image" alt="@item.ImageAlt" />
+                        </div>
+                        <div class="content">
+                            <p>@item.ImageAlt</p>
+                            <h4>
+                                <a style="font-size:18px;" href="#portfolio-v1" class="wedo-link-item" dideo-checked="true">
+                                    @item.Title
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" transform="matrix(-1,0,0,1,0,0)">
+                                        <path d="M0.922649 17.1544L18.5417 2.37029M18.5417 2.37029L17.628 11.3936M18.5417 2.37029L9.49675 1.70317" stroke="#1D1C22" stroke-opacity="0.1" stroke-width="2"></path>
+                                    </svg>
+                                </a>
+                            </h4>
+                        </div>
+                        <a asp-controller="Portfolio" asp-action="Detail" asp-route-Id="@item.Id" class="wedo-link-item wrap-link" dideo-checked="true"></a>
+                    </div>
+                </div>
+                <br />
+
+            }
+
+
+            <!-- end -->
+            <!-- box 3 -->
+            <!-- end -->
+            <!-- end -->
+
+        </div>
+ *@    <!-- widget link -->
+
+
+
+
+
+
+
+
+</div><!-- end -->

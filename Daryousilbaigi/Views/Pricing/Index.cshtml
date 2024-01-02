@@ -1,0 +1,67 @@
+﻿@model List<Application.Services.Pricing.GetAllPricingDto>;
+@{
+    ViewData["Title"] = "تعرفه ها |";
+}
+
+<!-- price-table -->
+<div class="cl8">
+    <div class="pricing-wrap wedo-section animated fadeInUp" id="pricing">
+        <div class="top-content">
+            <div class="wrap-title">
+                <div>
+                    <div class="note">
+                        <span class="icon-vector-4 icon"></span>
+                        <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+                        &ensp;
+                        <p>جدول قیمت</p>
+                    </div>
+                    <h1 style="font-size:30px;" class="title">
+                        جدول قیمت<span>.</span>
+                    </h1>
+                </div>
+                <div class="box-title">
+                    <div class="circle-box">
+                        <img src="~/images/home/circle.svg" class="circle" alt="image">
+                        <img class="logo" src="~/images/logo-2.png" alt="داریوش ایل بیگی">
+                    </div>
+                </div>
+
+
+            </div>
+            <p>
+                صداوا پروژه ها و ویدیو های شما رو میگیره و روی اون صداگذاری میکنه
+                صدا روی ویدیوی شما ضبط میشه با توجه به خواسته شما فایل صوتی خام برای شما ارسال میشه
+                اگر متن مورد نظری برای کار های خود دارید با توجه به متن ارسالی شما صداگذاری انجام میشه
+            </p>
+        </div>
+
+        <div class="group-col-2 content">
+            @foreach (var item in Model)
+            {
+                <div class="cl2">
+                    <div class="box-pricing">
+                        <div class="archive-top">
+                            <div class="inner-left">
+                                <p style="font-size:24px ">@item.Amount</p>
+                                <h4><a href="/"> @item.Title</a></h4>
+                                <div class="icon">
+                                    <span class="icon-vector-3 icon"></span>
+                                </div>
+                            </div>
+                            <p style="word-wrap:break-word; width: 160px;">
+
+                                @item.Description
+                            </p>
+                        </div>
+                        <div class="archive-bottom">
+                            <p>تماس و ثبت سفارش <span class="icon-arrow"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+    </div>
+</div>
+<!-- end -->

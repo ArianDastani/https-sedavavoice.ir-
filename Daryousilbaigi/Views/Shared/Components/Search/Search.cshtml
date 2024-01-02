@@ -1,0 +1,41 @@
+﻿@using Application.Services.Information;
+@model GetInfoDto
+
+@{
+    Layout = null;
+}
+<div class="cl4">
+    <div class="sticky-sidebar">
+        <div class="avatar">
+            <img src="~/content/profileimage/@Model.ProfileImage" alt="داریوش ایل بیگی">
+        </div>
+        <div class="profile">
+            <div class="top">
+                <h1 style="font-size: 24px; color: #a2a5b1;"> سلام! من @Model.FirstName هستم</h1>
+                <div class="wrap-text">
+                    <span class="auto-type">طراح UX/UI</span>
+                </div>
+            </div>
+            <div class="content">
+                <p>موبایل: @Model.PhoneNumber</p>
+                <p>کانال تلگرام: @@@Model.TelegramChannel</p>
+
+                <ul style="margin-right: 40px;" class="wd-social-icon m-top">
+                    <li><a href="tel:012345678"><i class="icon-phone"></i></a></li>
+                    @* <li><a href="#"><i class="fa-instagram"></i></a></li> *@
+                    <li><a href="https://instagram/sedavavoice"><i class="icon-instagram"></i></a></li>
+                    <li><a href="https://linkedin/sedavavoice"><i class="icon-linkedin"></i></a></li>
+
+                </ul>
+            </div>
+            <div class="bottom">
+                <a class="btn-profile active wedo-link-item" href="/contact">
+                    تماس با من ! <span class="icon-arrow"></span>
+                </a>
+                <a class="btn-profile wedo-link-item" href="/contact">
+                    دانلود رزومه <span class="icon-arrow"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

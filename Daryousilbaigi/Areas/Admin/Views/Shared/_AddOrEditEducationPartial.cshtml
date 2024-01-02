@@ -1,0 +1,67 @@
+﻿@using Application.Services.Education;
+@model AddOrEditEducationDto;
+
+@{
+    bool IsCreate = Model.Id == 0 ? true : false;
+}
+
+<form id="EducationForm" asp-area="admin" asp-controller="Education" asp-action="SubmitEducationFormModal"
+      data-ajax="true" data-ajax-begin="StartLoading()" data-ajax-success="EducationFormSubmited" class="needs-validation was-validated">
+
+    <input asp-for="Id" class="form-control" type="hidden">
+
+    <div class="modal-header">
+        <h5 class="modal-title">@(IsCreate == true ? "ایجاد" : "ویرایش")</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+    </div>
+
+    <div class="modal-body">
+
+
+        <div class="mb-3">
+            <label class="col-form-label" for="recipient-name">عنوان مهارت:</label>
+            <input asp-for="Title" class="form-control" type="text" required>
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">محل تحصیل : </label>
+            <input asp-for="EducationPlace" class="form-control" type="text" required>
+
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">تاریخ پایان : </label>
+            <div class="input-group">
+
+                <input class="form-control" asp-for="EndDate" placeholder="مثال: 1402/08/18" required type="date">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="">بستن</button>
+        <button class="btn btn-primary" type="submit">ثبت</button>
+
+    </div>
+    <link href="~/lib/wait-me/waitme.min.css" rel="stylesheet" />
+</form>
+
+
+@* <script src="~/lib/jqueryfinal/jquery.validate.min.js"></script>
+<script src="~/lib/jqueryfinal/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/lib/jqueryfinal/jquery.unobtrusive-ajax.min.js"></script> *@
+
+<script src="~/lib/wait-me/waitme.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="~/assets/js/persiandatepicker/persian-datepicker-0.4.5.min.css">
+
+<script src="~/assets/js/persiandatepicker/persian-date-0.1.8.min.js"></script>
+<script src="~/assets/js/persiandatepicker/persian-datepicker-0.4.5.min.js"></script>
+
+<script>
+    $('.datepicker3').persianDatepicker({
+        'format': 'YYYY/MM/DD',
+        initialValue: false
+    });
+</script>
+
+

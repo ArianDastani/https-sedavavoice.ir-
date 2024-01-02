@@ -1,0 +1,125 @@
+﻿@model Daryousilbaigi.Areas.Admin.Models.AdminIndexViewModels
+
+<div class="page-body">
+
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h3>ویجت های عمومی</h3>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" data-bs-original-title="" title=""> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                        <li class="breadcrumb-item">ویجت ها</li>
+                        <li class="breadcrumb-item active">عمومی</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>    <!-- Container-fluid starts-->
+    <div class="container-fluid default-dash">
+        <div class="row">
+
+            <div class="col-sm-6 col-xl-3 col-lg-6">
+                <div class="card o-hidden">
+                    <div class="card-body">
+                        <div class="media static-widget">
+                            <div class="media-body">
+                                <h6 class="font-roboto">نمونه کارها</h6>
+                                <h4 class="mb-0 counter">@Model.GetInformationsForAdmin.TotalPortfolio</h4>
+                            </div>
+                            
+                        </div>
+                        <div class="progress-widget">
+                            <div class="progress sm-progress-bar progress-animate">
+                                <div class="progress-gradient-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="animate-circle"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 col-lg-6">
+                <div class="card o-hidden">
+                    <div class="card-body">
+                        <div class="media static-widget">
+                            <div class="media-body">
+                                <h6 class="font-roboto">تعداد کل بازدید از نمونه کارها</h6>
+                                <h4 class="mb-0 counter">@Model.GetInformationsForAdmin.VisitsAllPortfolio</h4>
+                            </div>
+                    
+                        </div>
+                        <div class="progress-widget">
+                            <div class="progress sm-progress-bar progress-animate">
+                                <div class="progress-gradient-success" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="animate-circle"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 col-lg-6">
+                <div class="card o-hidden">
+                    <div class="card-body">
+                        <div class="media static-widget">
+                            <div class="media-body">
+                                <h6 class="font-roboto">پیغام ها</h6>
+                                <h4 class="mb-0 counter">@Model.GetInformationsForAdmin.TotalMessage</h4>
+                            </div>
+                            
+                        </div>
+                        <div class="progress-widget">
+                            <div class="progress sm-progress-bar progress-animate">
+                                <div class="progress-gradient-primary" role="progressbar" style="width: 48%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="animate-circle"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 col-lg-6">
+                <div class="card o-hidden">
+                    <div class="card-body">
+                        <div class="media static-widget">
+                            <div class="media-body">
+                                <h6 class="font-roboto">بازدید کل</h6>
+                                <h4 class="mb-0 counter">@Model.GetInformationsForAdmin.TotalVisits</h4>
+                            </div>
+                           
+                        </div>
+                        <div class="progress-widget">
+                            <div class="progress sm-progress-bar progress-animate">
+                                <div class="progress-gradient-danger" role="progressbar" style="width: 48%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="animate-circle"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-12 col-xl-12 col-lg-12">
+
+                <div class="card profile-greeting">
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="greeting-user">
+                                    <h1>سلام، </h1>
+                                    <p>خوش آمدید، داشبورد شما آماده است!</p><a class="btn btn-outline-white_color"
+                                                                               asp-controller="Informations" asp-action="Edit">شروع کنید<i class="icon-arrow-right"> </i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cartoon-img"><img class="img-fluid" src="" alt=""></div>
+                    </div>
+                </div>
+            </div>
+           
+       
+
+
+
+          
+        </div>
+    </div>
+
+</div>

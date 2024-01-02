@@ -1,0 +1,74 @@
+﻿@using Application.Services.Portfolio;
+@model ResultGetDetailPortfolioForIndexDto
+
+@{
+    TempData["Title"] = @Model.Title+"|";
+}
+
+<div class="cl8">
+    <div class="portfolio-wrap wedo-section animated fadeInUp active" id="portfolio-v2">
+        <div class="top-content">
+            <div class="wrap-title st-po-details">
+                <div class="note">
+                    <span class="icon-icon-7 icon"></span>
+                    <span>سلام!</span>
+
+                    <p>جزئیات نمونه کار</p>
+                </div>
+                <h1 class="title">جزئیات نمونه کار<span>.</span></h1>
+               @*  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                </p> *@
+            </div>
+        </div>
+        <div class="group-desc-user">
+           
+            <div class="image">
+                <img src="~/content/portfolio/image/@Model.Image" alt="@Model.ImageAlt">
+            </div>
+            <div class="desc-title">
+                <ul class="inner-desc">
+                    <li>لینک نمونه کار:  <span>@Model.Link</span></li>
+
+                </ul>
+                <ul class="inner-desc">
+                    <li>تعداد بازدید:  <span> @Model.ViewCount </span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3 style="word-wrap:break-word">@Model.Title</h3>
+            <p style="word-wrap:break-word">
+               @Model.Description
+            </p>
+        </div>
+     
+        <div class="image">
+            <video width="100%" height="100%" controls="controls">
+                <source src="~/content/portfolio/video/@Model.Video" type="video/mp4" />
+            </video>
+        </div>
+        
+       
+       @*  <div class="wd-link-blog">
+            <div class="prev-blog">
+                <a href="#" class="icon-arrow-thin-right"></a>
+                <div>
+                    <p>نمونه کار قبلی</p>
+                    <h3>خدمات ابری</h3>
+                </div>
+
+            </div>
+            <div class="next-blog">
+                <div>
+                    <p>نمونه کار بعدی</p>
+                    <h3>خدمات آی تی</h3>
+                </div>
+                <a href="#" class="icon-arrow-thin-left"></a>
+
+            </div>
+        </div> *@
+    </div>
+</div>

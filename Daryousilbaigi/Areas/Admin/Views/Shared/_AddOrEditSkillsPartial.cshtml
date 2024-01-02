@@ -1,0 +1,47 @@
+﻿@using Application.Services.Skills;
+@model AddOrEditSkillsDto
+
+@{
+    bool IsCreate = Model.Id == 0 ? true : false;
+}
+<form id="SkillForm" asp-area="admin" asp-controller="Skills" asp-action="SubmitSkillFormModal"
+      data-ajax="true" data-ajax-begin="StartLoading()" data-ajax-success="SkillFormSubmited" class="needs-validation was-validated">
+
+    <input asp-for="Id" class="form-control" type="hidden">
+
+    <div class="modal-header">
+        <h5 class="modal-title">@(IsCreate == true ? "ایجاد" : "ویرایش")</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+    </div>
+
+    <div class="modal-body">
+
+
+        <div class="mb-3">
+            <label class="col-form-label" for="recipient-name">عنوان مهارت:</label>
+            <input asp-for="Title" class="form-control" type="text" required>
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label" for="message-text">درصد مهارت : </label>
+            @* <input   class="touchspin" type="number" required> *@
+            <input asp-for="Percent" class="form-control digits" type="number" placeholder="شماره" required>
+
+        </div>
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal" data-bs-original-title="" title="">بستن</button>
+        <button class="btn btn-primary" type="submit">ثبت</button>
+
+    </div>
+    <link href="~/lib/wait-me/waitme.min.css" rel="stylesheet" />
+</form>
+
+
+@* <script src="~/lib/jqueryfinal/jquery.validate.min.js"></script>
+<script src="~/lib/jqueryfinal/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/lib/jqueryfinal/jquery.unobtrusive-ajax.min.js"></script> *@
+
+<script src="~/lib/wait-me/waitme.min.js"></script>
+

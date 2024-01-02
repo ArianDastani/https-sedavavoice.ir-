@@ -1,0 +1,98 @@
+﻿@using Application.Services.TopServices;
+@model List<ResultGetAllThingIdoForAdminDto>
+@{
+    ViewData["Title"] = "خدمات";
+}
+
+
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h3>جداول داده ای پایه</h3>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index-zeta.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                        <li class="breadcrumb-item">جداول داده</li>
+                        <li class="breadcrumb-item active">جداول داده ای پایه</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Zero Configuration  Starts-->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <a class="btn btn-pill btn-success btn-air-success btn-air-success" asp-area="Admin" asp-controller="ThingIdo" asp-action="SubmitThingIdoFormModal" asp-route-id="0"  type="button" data-original-title="btn btn-pill btn-success btn-air-success btn-air-success">
+                            افزودن
+                        </a>
+
+                    </div>
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+                            <table class="display" id="basic-1">
+                                <thead>
+                                    <tr>
+                                        <th>ایدی</th>
+                                        <th>عنوان</th>
+                                        <th>توضیحات</th>
+                                        <th>تعداد</th>
+                                        <th>گزینه ها</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr id="ListItem-@(item.Id)">
+                                            <td>@item.Id</td>
+                                            <td>@item.Title</td>
+                                            <td>@item.Description</td>
+                                            <td>@item.Count</td>
+                                            <td>
+                                                <a class="btn btn-warning btn-xs" asp-area="Admin" asp-controller="ThingIdo" asp-action="SubmitThingIdoFormModal" asp-route-id="@item.Id" type="button" data-original-title="btn btn-danger btn-xs">ویرایش</a>
+                                                <button class="btn btn-danger btn-xs" onclick="DeleteThingIdo('@item.Id')" type="button" data-original-title="btn btn-danger btn-xs">حذف</button>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zero Configuration  Ends-->
+
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>
+
+
+
+
+
+
+@section Scripts{
+    <script src="~/assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/js/datatable/datatables/datatable.custom.js"></script>
+
+
+    @*    <script src="~/lib/jqueryfinal/jquery.validate.min.js"></script>
+    <script src="~/lib/jqueryfinal/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/jqueryfinal/jquery.unobtrusive-ajax.min.js"></script> *@
+
+    <script src="~/lib/wait-me/waitme.min.js"></script>
+
+
+}
+

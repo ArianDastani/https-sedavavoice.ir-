@@ -1,0 +1,164 @@
+﻿@model List<Application.Services.TopServices.ResultGetAllThingIdoForAdminDto>
+@{
+    ViewData["Title"] = "خدمات من";
+}
+
+
+<!-- service -->
+<div class="cl8">
+    <div class="service-wrap wedo-section counter-scroll animated fadeInUp" id="service">
+        <div class="top-content">
+            <div class="wrap-title">
+                <div>
+                    <div class="note">
+                        <span class="icon-settings icon"></span>
+                        <h1 style="font-size: 14px;">داریوش ایل بیگی&nbsp;!&nbsp;</h1>
+                        &ensp;
+                        <p>خدمات اینجاس</p>
+                    </div>
+                    <h1 class="title">
+                        بهترین خدمات من<span>.</span>
+                    </h1>
+                </div>
+                <div class="box-title">
+
+                    <div class="circle-box">
+                        <img src="~/images/home/circle.svg" class="circle" alt="sedava">
+                        <img class="logo" src="~/images/logo-2.png" alt="داریوش ایل بیگی">
+                    </div>
+                </div>
+
+
+            </div>
+            <p>
+                هرکسی برای پیشرفت کسب و کار خودش 
+                در هر زمینه ای نیاز به تبلیغات داره و این تبلیغات باید به صورتی باشه که مخاطب هدف و بیننده جذب کسب و کار شما بشه و یکی از اصلی ترین و تاثیر گذار ترین موارد در تبلیغات صدا است که باعث جذب بهتر مخاطب به تبلیغ شما میشه و اینجاست که صداوا گویندگی پروژه ها و ویدیو های شما رو بر عهده میگیره و با صداگذاری روی کارهای شما اون کارو جذاب تر میکنه
+            </p>
+        </div>
+        <div class="row">
+            
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-12">
+                    <div class="tf-service ">
+                        <div class="title">
+                            <p>@item.Title</p>
+                            <span>(@(item.Count)+ - پروژه)</span>
+                        </div>
+                        <div class="content">
+                            <h4><a href="/">@item.Title</a></h4>
+                            <p>@item.Description </p>
+                        </div>
+                        <div class="image">
+                            <img src="~/content/thingIdo/Image/@item.Icon" alt="@item.Title">
+                        </div>
+                    </div>
+                </div>
+            }
+
+      
+            <!-- end -->
+            <!-- box 4 -->
+            @*             <div class="col-lg-12">
+            <div class="tf-service animate-down">
+            <div class="title">
+            <p>پروژه راستچین</p>
+            <span>(35 - پروژه)</span>
+            </div>
+            <div class="content">
+            <h4><a href="#">طراحی قالب</a></h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+            <div class="image">
+            <img src="~/images/service/img-4.png" alt="image">
+            </div>
+            </div>
+            </div>
+            <!-- end -->
+            <!-- box 5 -->
+            <div class="col-lg-12">
+            <div class="tf-service animate-down">
+            <div class="title">
+            <p>پروژه راستچین</p>
+            <span>(35 - پروژه)</span>
+            </div>
+            <div class="content">
+            <h4><a href="#">طراحی قالب</a></h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+            <div class="image">
+            <img src="~/images/service/img-5.png" alt="image">
+            </div>
+            </div>
+            </div>
+            <!-- end -->
+            <!-- box 6 -->
+            <div class="col-lg-12">
+            <div class="tf-service last animate-down">
+            <div class="title">
+            <p>پروژه راستچین</p>
+            <span>(35 - پروژه)</span>
+            </div>
+            <div class="content">
+            <h4><a href="#">طراحی قالب</a></h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+            <div class="image">
+            <img src="~/images/service/img-6.png" alt="image">
+            </div>
+            </div>
+            </div>
+            <!-- end -->
+            <div class="col-lg-12">
+            <a class="btn-profile btn-service" href="#">موارد بیشتر <span class="icon-arrow"></span></a>
+
+            </div> *@
+
+            <!-- count -->
+            <div class="col-4" id="tf-counter-number">
+                <div class="tf-count center">
+                    <div class="count">
+                        <h4 class="wrap-counter">
+                            <span class="number" data-from="0" data-to="31.2"
+                                  data-speed="10000">21</span>
+                        </h4>
+                    </div>
+                    <ul class="count-desc">
+                        <li>تعداد مشتریان</li>
+                        <li>استفاده از ابزارما.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="tf-count center">
+                    <div class="count">
+                        <h4 class="wrap-counter">
+                            <span class="number" data-from="0" data-to="2.3"
+                                  data-speed="5000">40</span>
+                        </h4>
+                    </div>
+                    <ul class="count-desc">
+                        <li>تعداد پروژه های</li>
+                        <li>انجام شده تا اکنون</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="tf-count center">
+                    <div class="count">
+                        <h4 class="wrap-counter">
+                            <span class="number" data-from="0" data-to="50"
+                                  data-speed="10000">5</span>
+                        </h4>
+                    </div>
+                    <ul class="count-desc">
+                        <li>تعداد پروژه های</li>
+                        <li>در دست انجام .</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end -->

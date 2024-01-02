@@ -1,0 +1,165 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Daryousilbaigi
+build_property.RootNamespace = Daryousilbaigi
+build_property.ProjectDir = C:\Users\DH\source\repos\Daryousilbaigi\Daryousilbaigi\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\DH\source\repos\Daryousilbaigi\Daryousilbaigi
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Education/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRWR1Y2F0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Informations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW5mb3JtYXRpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Message/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxSZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Portfolio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Portfolio/LoadAddOrEditPortFolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9ydGZvbGlvXExvYWRBZGRPckVkaXRQb3J0Rm9saW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Pricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Pricing/SubmitPricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJpY2luZ1xTdWJtaXRQcmljaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_AddOrEditEducationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZGRPckVkaXRFZHVjYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_AddorEditPortfolioPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZGRvckVkaXRQb3J0Zm9saW9QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_AddOrEditSkillsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZGRPckVkaXRTa2lsbHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_AddOrEditThingIdoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZGRPckVkaXRUaGluZ0lkb1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_SidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlYmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/Skills/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2tpbGxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/ThingIdo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGhpbmdJZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/ThingIdo/SubmitThingIdoFormModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGhpbmdJZG9cU3VibWl0VGhpbmdJZG9Gb3JtTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Authentication/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRpb25cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Portfolio/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Portfolio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Pricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Shared/Components/Search/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VhcmNoXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Shared/Components/SideBarViewComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2lkZUJhclZpZXdDb21wb25lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/ThingIdo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhpbmdJZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DH/source/repos/Daryousilbaigi/Daryousilbaigi/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
